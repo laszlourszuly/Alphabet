@@ -1,14 +1,23 @@
 package com.jayway.alphabet.screen.tickets;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by pererikbergman on 2017-10-13.
  */
 
 public class Ticket {
 
+    @SerializedName("id")
     private String mID;
+
+    @SerializedName("title")
     private String mTitle;
+
+    @SerializedName("description")
     private String mDescription;
+
+    @SerializedName("price")
     private String mPrice;
 
     public Ticket(String id, String title, String description, String price) {
