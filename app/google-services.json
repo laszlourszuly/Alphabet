@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "709298490664",
+    "firebase_url": "https://alphabet-c588b.firebaseio.com",
+    "project_id": "alphabet-c588b",
+    "storage_bucket": "alphabet-c588b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709298490664:android:be224ecc74e2061a",
+        "android_client_info": {
+          "package_name": "com.jayway.alphabet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709298490664-tkvhe9hvh01sqjd1da7cot4v6s6330hs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWXXf66iiwpHzgML7DNqpmY1H6JdoCNm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
