@@ -10,9 +10,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.jayway.alphabet.R;
+import com.jayway.alphabet.screen.checkout.CheckoutActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class RegisterActivity extends AppCompatActivity {
   private static final String NBR_OF_ATTENDEES = "nbrOfAttendees";
@@ -34,8 +36,6 @@ public class RegisterActivity extends AppCompatActivity {
   @BindView(R.id.input_email2) EditText mEmail2;
   @BindView(R.id.input_phone2) EditText mPhone2;
 
-  @BindView(R.id.submitBtn) Button mSubmit;
-
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -54,5 +54,10 @@ public class RegisterActivity extends AppCompatActivity {
     Intent launchIntent = new Intent(context, RegisterActivity.class);
     launchIntent.putExtra(NBR_OF_ATTENDEES, attendees);
     context.startActivity(launchIntent);
+  }
+
+  @OnClick(R.id.submitBtn)
+  public void submit() {
+    CheckoutActivity.showActivity(this);
   }
 }
