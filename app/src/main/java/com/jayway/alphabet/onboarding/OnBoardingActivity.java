@@ -1,5 +1,7 @@
 package com.jayway.alphabet.onboarding;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -56,4 +58,8 @@ public class OnBoardingActivity extends AppCompatActivity implements FragmentNav
                 .commit();
     }
 
+    public static void start(Context context) {
+        Intent starter = new Intent(context, OnBoardingActivity.class);
+        context.startActivity(starter);
+    }
 }
