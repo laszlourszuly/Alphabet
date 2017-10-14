@@ -59,7 +59,6 @@ public class RegisterActivity extends AppCompatActivity {
     View.OnClickListener listener = new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        Log.d("TEST", "TAG" + view.getTag());
         FirebaseTracker.getInstance().send("REGISTRATION_ON_FIELD_CLICKED_" + view.getTag());
       }
     };
@@ -93,7 +92,7 @@ public class RegisterActivity extends AppCompatActivity {
     attendees.add(attendee);
     if (nrbOfAttendees == 2) {
       String address2 = mAddress2.getText() + ", " + mPostalCode2.getText() + " " + mCity2.getText() + ", " + mCountry2.getText();
-      Attendee attendee2 = new Attendee(mName2.getText().toString(), mPhone2.getText().toString(), mEmail2.getText().toString(), address);
+      Attendee attendee2 = new Attendee(mName2.getText().toString(), mPhone2.getText().toString(), mEmail2.getText().toString(), address2);
       attendees.add(attendee2);
     }
     Order order = new Order(attendees);
