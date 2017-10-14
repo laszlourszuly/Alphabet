@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Alphabet</string>
+    <string name="one_ticket">One ticket</string>
+    <string name="value_pack">Value pack</string>
 </resources>

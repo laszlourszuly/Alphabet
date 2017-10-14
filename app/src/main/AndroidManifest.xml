@@ -20,6 +20,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".onboarding.OnBoardingActivity"
+            android:exported="true"/>
+
     </application>
 
 </manifest>
