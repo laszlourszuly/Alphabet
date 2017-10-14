@@ -1,7 +1,7 @@
 package com.jayway.alphabet.api;
 
 
-import com.jayway.alphabet.screen.tickets.Ticket;
+import com.jayway.alphabet.model.Ticket;
 
 import java.util.List;
 

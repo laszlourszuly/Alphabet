@@ -2,6 +2,7 @@ package com.jayway.alphabet.screen.tickets;
 
 import com.jayway.alphabet.api.ApiClient;
 import com.jayway.alphabet.api.ApiInterface;
+import com.jayway.alphabet.model.Ticket;
 
 import java.util.ArrayList;
 import java.util.List;

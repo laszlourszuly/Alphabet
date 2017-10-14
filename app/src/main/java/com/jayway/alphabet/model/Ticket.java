@@ -1,10 +1,6 @@
-package com.jayway.alphabet.screen.tickets;
+package com.jayway.alphabet.model;
 
 import com.google.gson.annotations.SerializedName;
-
-/**
- * Created by pererikbergman on 2017-10-13.
- */
 
 public class Ticket {
 
