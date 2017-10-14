@@ -2,4 +2,6 @@
     <string name="app_name">Alphabet</string>
     <string name="one_ticket">One ticket</string>
     <string name="value_pack">Value pack</string>
+    <string name="workshop">Workshop</string>
+    <string name="hotel">Hotel</string>
 </resources>

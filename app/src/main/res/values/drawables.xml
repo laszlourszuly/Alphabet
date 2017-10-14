@@ -2,4 +2,6 @@
 <resources>
     <drawable name="ic_dude">@drawable/ic_person_black_24px</drawable>
     <drawable name="ic_dudes">@drawable/ic_people_black_24px</drawable>
+    <drawable name="ic_two_days">@drawable/ic_filter_2_black_24dp</drawable>
+    <drawable name="ic_three_days">@drawable/ic_filter_3_black_24dp</drawable>
 </resources>
