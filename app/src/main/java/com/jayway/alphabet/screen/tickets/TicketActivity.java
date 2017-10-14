@@ -1,4 +1,4 @@
-package com.jayway.alphabet.onboarding;
+package com.jayway.alphabet.screen.tickets;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import com.jayway.alphabet.tracking.FirebaseTracker;
  * This Activity is responsible for orchestrating the on-boarding navigation
  * flow.
  */
-public class OnBoardingActivity extends AppCompatActivity implements FragmentNavigationListener {
+public class TicketActivity extends AppCompatActivity implements FragmentNavigationListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class OnBoardingActivity extends AppCompatActivity implements FragmentNav
     }
 
     public static void start(Context context) {
-        Intent starter = new Intent(context, OnBoardingActivity.class);
+        Intent starter = new Intent(context, TicketActivity.class);
         context.startActivity(starter);
     }
 }

@@ -1,4 +1,4 @@
-package com.jayway.alphabet.onboarding;
+package com.jayway.alphabet.screen.tickets;
 
 import android.content.Context;
 import android.os.Bundle;

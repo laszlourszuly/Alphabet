@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".onboarding.OnBoardingActivity"
+            android:name=".screen.tickets.TicketActivity"
             android:exported="true"/>
         <activity
             android:name=".screen.splash.SplashActivity"

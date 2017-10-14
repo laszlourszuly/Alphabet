@@ -1,4 +1,4 @@
-package com.jayway.alphabet.onboarding;
+package com.jayway.alphabet.screen.tickets;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.jayway.alphabet.FragmentNavigationListener;
 import com.jayway.alphabet.R;
 
 /**
- * This fragment is responsible for showing the value-pack offering to the user,
+ * This fragment is responsible for showing the one-ticket offering to the user,
  * reporting any user interaction up to the parent Activity.
  */
-public class ValuePackFragment extends Fragment {
+public class OneTicketFragment extends Fragment {
 
     private FragmentNavigationListener navigationListener;
 
@@ -34,7 +34,7 @@ public class ValuePackFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_onboarding_offering_valuepack, container, false);
+        return inflater.inflate(R.layout.fragment_onboarding_offering_oneticket, container, false);
     }
 
 }
