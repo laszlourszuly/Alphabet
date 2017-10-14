@@ -47,4 +47,11 @@ public class Attendee {
     public void setPhoneNumber(String phoneNumber) {
         mPhoneNumber = phoneNumber;
     }
+
+    public Attendee(String name, String phoneNumber, String email, String address) {
+        this.mFullName = name;
+        this.mPhoneNumber = phoneNumber;
+        this.mEmail = email;
+        this.mFullAddress = address;
+    }
 }

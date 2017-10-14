@@ -36,7 +36,8 @@
                     android:id="@+id/input_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"/>
+                    android:hint="Name"
+                    android:tag="NAME"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -49,7 +50,8 @@
                     android:id="@+id/input_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Address"/>
+                    android:hint="Address"
+                    android:tag="ADDRESS"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -63,7 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
-                    android:hint="Postal Code"/>
+                    android:hint="Postal Code"
+                    android:tag="POSTAL_CODE"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -76,7 +79,8 @@
                     android:id="@+id/input_city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="City"/>
+                    android:hint="City"
+                    android:tag="CITY"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -89,7 +93,8 @@
                     android:id="@+id/input_country"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Country"/>
+                    android:hint="Country"
+                    android:tag="COUNTRY"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -102,7 +107,8 @@
                     android:id="@+id/input_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"/>
+                    android:hint="Email"
+                    android:tag="EMAIL"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -116,7 +122,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
-                    android:hint="Phone number"/>
+                    android:hint="Phone number"
+                    android:tag="PHONE_NUMBER"/>
 
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
@@ -147,7 +154,8 @@
                     android:id="@+id/input_name2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"/>
+                    android:hint="Name"
+                    android:tag="NAME2"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -160,7 +168,8 @@
                     android:id="@+id/input_addres2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Address"/>
+                    android:hint="Address"
+                    android:tag="ADDRESS2"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -174,7 +183,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
-                    android:hint="Postal Code"/>
+                    android:hint="Postal Code"
+                    android:tag="POSTAL_CODE2"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -187,7 +197,8 @@
                     android:id="@+id/input_city2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="City"/>
+                    android:hint="City"
+                    android:tag="CITY2"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -200,7 +211,8 @@
                     android:id="@+id/input_country2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Country"/>
+                    android:hint="Country"
+                    android:tag="COUNTRY2"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -213,7 +225,8 @@
                     android:id="@+id/input_email2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"/>
+                    android:hint="Email"
+                    android:tag="EMAIL2"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -227,7 +240,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
-                    android:hint="Phone number"/>
+                    android:hint="Phone number"
+                    android:tag="PHONE_NUMBER2"/>
 
             </android.support.design.widget.TextInputLayout>
 
