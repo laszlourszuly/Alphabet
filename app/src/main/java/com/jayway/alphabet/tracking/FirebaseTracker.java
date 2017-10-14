@@ -30,7 +30,7 @@ public class FirebaseTracker implements Tracker {
      * @return The tracker instance.
      * @throws IllegalStateException If the tracker hasn't been setup yet.
      */
-    public FirebaseTracker getInstance() throws IllegalStateException {
+    public static FirebaseTracker getInstance() throws IllegalStateException {
         if (instance == null)
             throw new IllegalStateException("FirebaseTracker hasn't been initialized yet. " +
                     "Make sure you have called 'FirebaseTracker#setup(Context)'");
