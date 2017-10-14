@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.jayway.alphabet.FragmentNavigationListener;
 import com.jayway.alphabet.R;
+import com.jayway.alphabet.tracking.FirebaseTracker;
 
 /**
  * This Activity is responsible for orchestrating the on-boarding navigation
@@ -30,15 +31,16 @@ public class OnBoardingActivity extends AppCompatActivity implements FragmentNav
                 .commit();
     }
 
-
     @Override
     public void onNavigationRequest(int touchedViewId) {
         switch (touchedViewId) {
             case R.id.one_ticket:
                 navigateTo(new OneTicketFragment());
+                FirebaseTracker.getInstance().mark("ONBOARDING.ONE_TICKET_BUTTON");
                 break;
             case R.id.value_pack:
                 navigateTo(new ValuePackFragment());
+                FirebaseTracker.getInstance().mark("ONBOARDING.ONE_TICKET_BUTTON");
                 break;
             default:
                 // Don't do anything
