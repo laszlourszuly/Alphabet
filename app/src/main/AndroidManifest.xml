@@ -27,6 +27,8 @@
 
         <activity android:name=".screen.checkout.CheckoutActivity" />
 
+        <activity android:name=".screen.register.RegisterActivity" />
+
     </application>
 
 </manifest>

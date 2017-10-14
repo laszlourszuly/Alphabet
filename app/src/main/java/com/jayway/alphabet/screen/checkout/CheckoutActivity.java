@@ -1,6 +1,8 @@
 package com.jayway.alphabet.screen.checkout;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
@@ -15,4 +17,11 @@ public class CheckoutActivity extends Activity {
 		setContentView(R.layout.activity_checkout);
 
 	}
+
+	public static void showActivity(Context context) {
+		Intent launchIntent = new Intent(context, CheckoutActivity.class);
+		context.startActivity(launchIntent);
+	}
+
+
 }
