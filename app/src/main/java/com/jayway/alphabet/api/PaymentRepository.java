@@ -1,27 +1,25 @@
-package com.jayway.alphabet.screen.order;
+package com.jayway.alphabet.api;
 
-import com.jayway.alphabet.api.ApiClient;
-import com.jayway.alphabet.api.ApiInterface;
-import com.jayway.alphabet.model.Order;
-import com.jayway.alphabet.model.OrderReceipt;
+import com.jayway.alphabet.model.Payment;
+import com.jayway.alphabet.model.PaymentReceipt;
 
 import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class OrderRepository {
-    public Observable<OrderReceipt> post(Order order) {
+public class PaymentRepository {
+    public Observable<PaymentReceipt> post(Payment order) {
         return Observable.create(e -> {
             ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
 
-            Call<OrderReceipt> ticketList = apiService.postPayment(order);
+            Call<PaymentReceipt> ticketList = apiService.postPayment(order);
 
-            ticketList.enqueue(new Callback<OrderReceipt>() {
+            ticketList.enqueue(new Callback<PaymentReceipt>() {
                 @Override
-                public void onResponse(Call<OrderReceipt> call, Response<OrderReceipt> response) {
+                public void onResponse(Call<PaymentReceipt> call, Response<PaymentReceipt> response) {
                     if (response.isSuccessful()) {
-                        OrderReceipt changesList = response.body();
+                        PaymentReceipt changesList = response.body();
                         e.onNext(changesList);
                         e.onComplete();
                     } else {
@@ -31,7 +29,7 @@ public class OrderRepository {
                 }
 
                 @Override
-                public void onFailure(Call<OrderReceipt> call, Throwable t) {
+                public void onFailure(Call<PaymentReceipt> call, Throwable t) {
                     e.onError(t);
                 }
             });
