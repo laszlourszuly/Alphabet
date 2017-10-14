@@ -36,18 +36,6 @@
             android:paddingTop="16dp"
             android:text="@string/value_pack"/>
 
-        <Button
-            android:id="@+id/purchase"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:drawablePadding="10dp"
-            android:drawableStart="@drawable/ic_check_circle_black_24px"
-            android:paddingBottom="16dp"
-            android:paddingEnd="24dp"
-            android:paddingStart="24dp"
-            android:paddingTop="16dp"
-            android:text="Purchase"/>
 
 
     </LinearLayout>
