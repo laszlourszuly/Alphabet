@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Order {
     @SerializedName("attendees")
-    private ArrayList<String> attendees;
+    private ArrayList<Attendee> attendees;
 
     @SerializedName("company")
     private String company;
@@ -29,11 +29,11 @@ public class Order {
     @SerializedName("weekdays")
     private ArrayList<String> weekdays;
 
-    public ArrayList<String> getAttendees() {
+    public ArrayList<Attendee> getAttendees() {
         return attendees;
     }
 
-    public void setAttendees(ArrayList<String> attendees) {
+    public void setAttendees(ArrayList<Attendee> attendees) {
         this.attendees = attendees;
     }
 
@@ -91,6 +91,10 @@ public class Order {
 
     public void setWeekdays(ArrayList<String> weekdays) {
         this.weekdays = weekdays;
+    }
+
+    public Order(ArrayList<Attendee> attendees) {
+        this.attendees = attendees;
     }
 }
 
