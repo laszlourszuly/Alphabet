@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.jayway.alphabet.FragmentNavigationListener;
 import com.jayway.alphabet.R;
+import com.jayway.alphabet.screen.register.RegisterActivity;
 import com.jayway.alphabet.tracking.FirebaseTracker;
 
 /**
@@ -35,12 +36,12 @@ public class TicketActivity extends AppCompatActivity implements FragmentNavigat
     public void onNavigationRequest(int touchedViewId) {
         switch (touchedViewId) {
             case R.id.one_ticket:
-                navigateTo(new OneTicketFragment());
                 FirebaseTracker.getInstance().send("ONBOARDING.ONE_TICKET_BUTTON");
+                RegisterActivity.showActivity(this, 1);
                 break;
             case R.id.value_pack:
-                navigateTo(new ValuePackFragment());
                 FirebaseTracker.getInstance().send("ONBOARDING.ONE_TICKET_BUTTON");
+                RegisterActivity.showActivity(this, 2);
                 break;
             default:
                 // Don't do anything
