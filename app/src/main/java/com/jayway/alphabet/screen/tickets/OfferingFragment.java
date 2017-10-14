@@ -44,6 +44,9 @@ public class OfferingFragment extends Fragment {
         Button valuePack = view.findViewById(R.id.value_pack);
         valuePack.setOnClickListener(clickListener);
 
+        Button purchase = view.findViewById(R.id.purchase);
+        purchase.setOnClickListener(clickListener);
+
         return view;
     }
 

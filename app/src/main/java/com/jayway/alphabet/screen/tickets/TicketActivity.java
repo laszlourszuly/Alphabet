@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.jayway.alphabet.FragmentNavigationListener;
 import com.jayway.alphabet.R;
+import com.jayway.alphabet.screen.checkout.CheckoutActivity;
 import com.jayway.alphabet.tracking.FirebaseTracker;
 
 /**
@@ -42,6 +43,11 @@ public class TicketActivity extends AppCompatActivity implements FragmentNavigat
                 navigateTo(new ValuePackFragment());
                 FirebaseTracker.getInstance().send("ONBOARDING.ONE_TICKET_BUTTON");
                 break;
+
+            case R.id.purchase:
+                startActivity(new Intent(TicketActivity.this, CheckoutActivity.class));
+                break;
+
             default:
                 // Don't do anything
                 break;
