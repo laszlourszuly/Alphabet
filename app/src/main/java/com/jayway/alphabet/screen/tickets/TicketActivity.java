@@ -36,11 +36,11 @@ public class TicketActivity extends AppCompatActivity implements FragmentNavigat
         switch (touchedViewId) {
             case R.id.one_ticket:
                 navigateTo(new OneTicketFragment());
-                FirebaseTracker.getInstance().mark("ONBOARDING.ONE_TICKET_BUTTON");
+                FirebaseTracker.getInstance().send("ONBOARDING.ONE_TICKET_BUTTON");
                 break;
             case R.id.value_pack:
                 navigateTo(new ValuePackFragment());
-                FirebaseTracker.getInstance().mark("ONBOARDING.ONE_TICKET_BUTTON");
+                FirebaseTracker.getInstance().send("ONBOARDING.ONE_TICKET_BUTTON");
                 break;
             default:
                 // Don't do anything

@@ -10,13 +10,13 @@ public interface Tracker {
      *
      * @param tag The textual tag to register.
      */
-    void mark(String tag);
+    void send(String tag);
 
     /**
      * Registers a given tag in the tracking infrastructure.
      *
      * @param tag The numeric tag to register.
      */
-    void mark(int tag);
+    void send(int tag);
 
 }

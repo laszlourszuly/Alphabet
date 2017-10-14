@@ -1,7 +1,6 @@
 package com.jayway.alphabet.tracking;
 
 import android.content.Context;
-import android.os.Bundle;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
@@ -54,17 +53,13 @@ public class FirebaseTracker implements Tracker {
 
 
     @Override
-    public void mark(String tag) {
-        Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, tag);
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+    public void send(String tag) {
+        firebaseAnalytics.logEvent(tag, null);
     }
 
     @Override
-    public void mark(int tag) {
-        Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, Integer.toString(tag));
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+    public void send(int tag) {
+        firebaseAnalytics.logEvent(String.valueOf(tag), null);
     }
 
 }
